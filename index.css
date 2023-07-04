@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Header */
+.header {
+  width: 1440px;
+  height: 70px;
+  background: #ffffff;
+  /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); */
+}
+.header__container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+}
+.header__menu {
+  display: flex;
+  list-style: none;
+  width: 555px;
+  justify-content: space-between;
+}
+.header__menu li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  cursor: pointer;
+
+  transition: 500ms;
+  letter-spacing: 0.2em;
+  height: 70px;
+  line-height: 70px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0);
+}
+.header__menu li:hover {
+  border-bottom: 4px solid black;
+}
+.header__icons {
+  display: flex;
+  justify-content: space-between;
+  width: 112px;
+  cursor: pointer;
+}
+
+/* main container */
+.kettles__blue,
+.kettles__red,
+.kettles__pink,
+.kettles__beige {
+  width: 1440px;
+  height: 698px;
+  display: flex;
+  background: #95cfd5;
+}
+.kettles__red {
+  background: #c42129;
+}
+.kettles__pink {
+  background: #e0adc5;
+}
+.kettles__beige {
+  background: #f5c7b3;
+}
+.kettles__title {
+  width: 540px;
+  height: 150px;
+  margin-left: 152px;
+  margin-top: 127px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 150px;
+  color: #ffffff;
+}
+.kettles__subtitle {
+  width: 560px;
+  height: 48px;
+  margin-top: 8px;
+  margin-bottom: 36px;
+  margin-left: 152px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.kettles__btns {
+  display: flex;
+  margin-left: 15px;
+  margin-left: 152px;
+}
+.kettles__btnShop {
+  width: 272px;
+  height: 52px;
+  background: #000000;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.kettles__btnShop:hover {
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0px 9px 14px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+.kettles__btnCircle {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-left: 46px;
+  position: relative;
+  cursor: pointer;
+}
+.kettles__iconInnerCircle {
+  background: #ffffff;
+  border-radius: 50%;
+}
+.kettles__iconInnerCircle:hover {
+  background: #000000;
+}
+.fa-solid {
+  margin: 10px;
+  font-size: 28px;
+}
+.fa-solid:hover {
+  color: #ffffff;
+}
+.kettles__btnWatch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.kettles__slider {
+  display: flex;
+  width: 368px;
+  margin-left: 152px;
+  margin-top: 64px;
+  justify-content: space-between;
+}
+.kettles__sliderIcon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 7px;
+  background: none;
+  cursor: pointer;
+}
+.kettles__slider--bgWhite {
+  background: #ffffff;
+}
+.kettles__img {
+  width: 50%;
+  position: relative;
+}
+.kettles__img--Big {
+  position: absolute;
+  right: 206px;
+  top: 68px;
+  z-index: 1;
+}
+.kettles__img--Text {
+  position: absolute;
+  top: 88px;
+  right: 152px;
+}
+.kettles__bulletConteiner {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 300px;
+  right: 70px;
+}
+.kettles__bulletList {
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+.kettles__bulletList:hover {
+  background: #ffffff;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  cursor: pointer;
+}
+
+/* .kettles__wrapper {
+  display: flex;
+} */
