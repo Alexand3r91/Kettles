@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="fonts/poppins.css" />
     <link rel="stylesheet" href="font_icon/css/all.css " />
-    <title>Document</title>
+    <title style="display: none">Document</title>
+    <script src="js/index.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -33,7 +34,11 @@
     </header>
     <main class="kettles">
       <div class="kettles__wrapper">
-        <section class="kettles__blue">
+        <section
+          id="kettlesSectionBlue"
+          data-section="kettlesBlue"
+          class="kettles__blue"
+        >
           <div class="kettles__info">
             <div class="kettles__title">Kettles</div>
             <div class="kettles__subtitle">
@@ -53,17 +58,31 @@
               <div class="kettles__btnWatch">watch Video</div>
             </div>
             <div class="kettles__slider">
-              <button class="kettles__sliderIcon kettles__slider--bgWhite">
-                <img src="img/kittleLittle_Blue.png" alt="" />
+              <button
+                class="kettles__sliderIcon kettles__slider--bgWhite kettlesBlue"
+              >
+                <img
+                  id="kettlesLittlesBlue"
+                  src="img/kittleLittle_Blue.png"
+                  alt=""
+                />
               </button>
               <button class="kettles__sliderIcon">
-                <img src="img/kittleLittle_Red.png" alt="" />
+                <img src="img/kittleLittle_Red.png" alt="" class="kettlesRed" />
+              </button>
+              <button class="kettles__sliderIcon kettlesPink">
+                <img
+                  class="kettlesPink"
+                  src="img/kittleLittle_Pink.png"
+                  alt=""
+                />
               </button>
               <button class="kettles__sliderIcon">
-                <img src="img/kittleLittle_Pink.png" alt="" />
-              </button>
-              <button class="kettles__sliderIcon">
-                <img src="img/kittleLittle_Beige.png" alt="" />
+                <img
+                  class="kettlesBeige"
+                  src="img/kittleLittle_Beige.png"
+                  alt=""
+                />
               </button>
             </div>
           </div>
@@ -83,28 +102,13 @@
           </div>
         </section>
 
-        <header class="header">
-          <div class="header__container">
-            <div class="header__logo">
-              <a href="">
-                <img src="img/1200px-Smeg_logo 2.png" alt="smeg" />
-              </a>
-            </div>
-            <div>
-              <ul class="header__menu">
-                <li>PRODUCTS</li>
-                <li>AESTHETIC LINES</li>
-                <li>INSPIRATION</li>
-              </ul>
-            </div>
-            <div class="header__icons">
-              <img src="img/magnifying-glass 1.png" alt="" />
-              <img src="img/user 1.png" alt="" />
-              <img src="img/shopping-cart 1.png" alt="" />
-            </div>
-          </div>
-        </header>
-        <section class="kettles__red">
+        <section
+          id="kettlesSectionRed"
+          data-section="kettlesRed"
+          class="kettles__red"
+          style="display: none"
+        >
+          <!-- style="display: none" -->
           <div class="kettles__info">
             <div class="kettles__title">Kettles</div>
             <div class="kettles__subtitle">
@@ -125,16 +129,22 @@
             </div>
             <div class="kettles__slider">
               <button class="kettles__sliderIcon">
-                <img src="img/kittleLittle_Blue.png" alt="" />
+                <img
+                  class="kettlesBlue"
+                  src="img/kittleLittle_Blue.png"
+                  alt=""
+                />
               </button>
-              <button class="kettles__sliderIcon kettles__slider--bgWhite">
-                <img src="img/kittleLittle_Red.png" alt="" />
+              <button
+                class="kettles__sliderIcon kettles__slider--bgWhite "
+              >
+                <img src="img/kittleLittle_Red.png" alt="" class="kettlesRed" />
               </button>
-              <button class="kettles__sliderIcon">
-                <img src="img/kittleLittle_Pink.png" alt="" />
+              <button class="kettles__sliderIcon ">
+                <img src="img/kittleLittle_Pink.png" alt="" class="kettlesPink" />
               </button>
-              <button class="kettles__sliderIcon">
-                <img src="img/kittleLittle_Beige.png" alt="" />
+              <button class="kettles__sliderIcon ">
+                <img src="img/kittleLittle_Beige.png" alt="" class="kettlesBeige" />
               </button>
             </div>
           </div>
@@ -152,28 +162,12 @@
           </div>
         </section>
 
-        <header class="header">
-          <div class="header__container">
-            <div class="header__logo">
-              <a href="">
-                <img src="img/1200px-Smeg_logo 2.png" alt="smeg" />
-              </a>
-            </div>
-            <div>
-              <ul class="header__menu">
-                <li>PRODUCTS</li>
-                <li>AESTHETIC LINES</li>
-                <li>INSPIRATION</li>
-              </ul>
-            </div>
-            <div class="header__icons">
-              <img src="img/magnifying-glass 1.png" alt="" />
-              <img src="img/user 1.png" alt="" />
-              <img src="img/shopping-cart 1.png" alt="" />
-            </div>
-          </div>
-        </header>
-        <section class="kettles__pink">
+        <section
+          id="kettlesSectionPink"
+          data-section="kettlesPink"
+          class="kettles__pink"
+          style="display: none"
+        >
           <div class="kettles__info">
             <div class="kettles__title">Kettles</div>
             <div class="kettles__subtitle">
@@ -193,17 +187,21 @@
               <div class="kettles__btnWatch">watch Video</div>
             </div>
             <div class="kettles__slider">
-              <button class="kettles__sliderIcon">
-                <img src="img/kittleLittle_Blue.png" alt="" />
+              <button class="kettles__sliderIcon ">
+                <img src="img/kittleLittle_Blue.png" alt="" class="kettlesBlue" />
               </button>
-              <button class="kettles__sliderIcon">
-                <img src="img/kittleLittle_Red.png" alt="" />
+              <button class="kettles__sliderIcon ">
+                <img src="img/kittleLittle_Red.png" alt="" class="kettlesRed" />
               </button>
               <button class="kettles__sliderIcon kettles__slider--bgWhite">
-                <img src="img/kittleLittle_Pink.png" alt="" />
+                <img
+                  class="kettlesPink"
+                  src="img/kittleLittle_Pink.png"
+                  alt=""
+                />
               </button>
-              <button class="kettles__sliderIcon">
-                <img src="img/kittleLittle_Beige.png" alt="" />
+              <button class="kettles__sliderIcon ">
+                <img src="img/kittleLittle_Beige.png" alt="" class="kettlesBeige" />
               </button>
             </div>
           </div>
@@ -225,28 +223,12 @@
           </div>
         </section>
 
-        <header class="header">
-          <div class="header__container">
-            <div class="header__logo">
-              <a href="">
-                <img src="img/1200px-Smeg_logo 2.png" alt="smeg" />
-              </a>
-            </div>
-            <div>
-              <ul class="header__menu">
-                <li>PRODUCTS</li>
-                <li>AESTHETIC LINES</li>
-                <li>INSPIRATION</li>
-              </ul>
-            </div>
-            <div class="header__icons">
-              <img src="img/magnifying-glass 1.png" alt="" />
-              <img src="img/user 1.png" alt="" />
-              <img src="img/shopping-cart 1.png" alt="" />
-            </div>
-          </div>
-        </header>
-        <section class="kettles__beige">
+        <section
+          id="kettlesSectionBeige"
+          data-section="kettlesBeineg"
+          class="kettles__beige"
+          style="display: none"
+        >
           <div class="kettles__info">
             <div class="kettles__title">Kettles</div>
             <div class="kettles__subtitle">
@@ -266,17 +248,19 @@
               <div class="kettles__btnWatch">watch Video</div>
             </div>
             <div class="kettles__slider">
-              <button class="kettles__sliderIcon">
-                <img src="img/kittleLittle_Blue.png" alt="" />
+              <button class="kettles__sliderIcon ">
+                <img src="img/kittleLittle_Blue.png" alt="" class="kettlesBlue" />
               </button>
-              <button class="kettles__sliderIcon">
-                <img src="img/kittleLittle_Red.png" alt="" />
+              <button class="kettles__sliderIcon ">
+                <img src="img/kittleLittle_Red.png" alt="" class="kettlesRed" />
               </button>
-              <button class="kettles__sliderIcon">
-                <img src="img/kittleLittle_Pink.png" alt="" />
+              <button class="kettles__sliderIcon ">
+                <img src="img/kittleLittle_Pink.png" alt="" class="kettlesPink" />
               </button>
-              <button class="kettles__sliderIcon kettles__slider--bgWhite">
-                <img src="img/kittleLittle_Beige.png" alt="" />
+              <button
+                class="kettles__sliderIcon kettles__slider--bgWhite "
+              >
+                <img src="img/kittleLittle_Beige.png" alt="" class="kettlesBeige" />
               </button>
             </div>
           </div>
@@ -299,6 +283,11 @@
         </section>
       </div>
     </main>
-    <script src="js/index.js"></script>
+    <script>
+      // Выполняем код после загрузки JavaScript файла
+      document.addEventListener("DOMContentLoader", () => {
+        handleButtonClick();
+      });
+    </script>
   </body>
 </html>
