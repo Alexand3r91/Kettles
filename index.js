@@ -1,35 +1,48 @@
-const buttons = document.querySelectorAll('.kettles__btnShop');
+function handleButtonClick() {
+  const target = event.target;
 
-/*// Устанавливаем обработчик события на наведение (mouseover)
-buttons.addEventListener('mouseover', function() {
-  // Задаем цвет кнопки при наведении (например, красный)
-  button.style.backgroundColor = 'white';
+  const section = target.closest('section');
+
+  if (target.classList.contains('kettlesRed')) {
+    hideAllSections();
+    const kettlesSectionRed = document.getElementById('kettlesSectionRed');
+    kettlesSectionRed.style.display = 'flex';
+  } else if (target.classList.contains('kettlesBlue')) {
+    hideAllSections();
+    const kettlesSectionBlue = document.getElementById('kettlesSectionBlue');
+    kettlesSectionBlue.style.display = 'flex';
+  } else if (target.classList.contains('kettlesPink')) {
+    hideAllSections();
+    const kettlesSectionPink = document.getElementById('kettlesSectionPink');
+    kettlesSectionPink.style.display = 'flex';
+  } else if (target.classList.contains('kettlesBeige')) {
+    hideAllSections();
+    const kettlesSectionBeige = document.getElementById('kettlesSectionBeige');
+    kettlesSectionBeige.style.display = 'flex';
+  }
+}
+
+const kettlesBlue = document.querySelectorAll('.kettlesBlue');
+const kettlesRed = document.querySelectorAll('.kettlesRed');
+const kettlesPink = document.querySelectorAll('.kettlesPink');
+const kettlesBeige = document.querySelectorAll('.kettlesBeige');
+
+kettlesBlue.forEach(button => {
+  button.addEventListener('click', handleButtonClick);
+});
+kettlesRed.forEach(button => {
+  button.addEventListener('click', handleButtonClick);
+});
+kettlesPink.forEach(button => {
+  button.addEventListener('click', handleButtonClick);
+});
+kettlesBeige.forEach(button => {
+  button.addEventListener('click', handleButtonClick);
 });
 
-// Устанавливаем обработчик события на уход курсора с кнопки (mouseout)
-buttons.addEventListener('mouseout', function() {
-  // Восстанавливаем цвет кнопки после ухода курсора (например, в исходный цвет)
-  buttons.style.backgroundColor = '';
-});
-console.log(buttons)
-
-
-
-onmousedown
-onmouseenter
-onmouseleave
-onmousemove
-onmouseout
-onmouseover
-onmouseup
-*/
-
-// Добавляем обработчик события на каждую кнопку
-buttons.forEach(button => {
-  button.addEventListener('mouseover', () => {
-    button.classList.add('button__hover');
+function hideAllSections() {
+  const sections = document.querySelectorAll('section');
+  sections.forEach(section => {
+    section.style.display = 'none';
   });
-  button.addEventListener('mouseout', () => {
-    button.classList.remove('button__hover');
-  });
-});
+}
